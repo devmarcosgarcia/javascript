@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tratamento de Dados</title>
+    <style>
+        body{
+            position: relative;
+            background-color: blue;
+            height: 98vh;
+            
+        }
+
+        main{
+            position: absolute;
+            background-color: white;
+            display: inline-block;
+            padding: 20px;
+            margin: auto;
+            border-radius: 5px;
+
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Tratamento de Dados</h1>
+    </main>
+
+    <script>
+
+        var num1 = window.prompt('Digite um número: ')
+    
+        var num2 = window.prompt('Digite outro número: ')
+
+        var soma = Number(num1) + Number(num2)
+
+        //window.alert('A soma dos valores é: '+ soma )
+
+        window.alert(`A soma de ${num1} + ${num2} = ${soma}`)
+        
+    </script>
+    
+</body>
+</html>
