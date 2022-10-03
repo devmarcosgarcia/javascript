@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando Valores</title>
+    <style>
+        body{
+            position: relative;
+            height: 98vh;
+            background-color: gray;
+        }
+
+        div#soma{
+            position: absolute;
+            min-width: 500px;
+            height: 250px;
+
+            background-color: white;
+
+            padding: 10px;
+
+            top: 50%;
+            left: 50%;
+
+            transform: translate(-50%, -50%);
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="soma">
+        <h1>Soma</h1>
+
+        <input type="number" name="txtNum1" id="txtNum1">
+        <label for="txtNum1">1º Número</label>
+        <br>
+        <br>
+        <input type="number" name="txtNum2" id="txtNum2">
+        <label for="txtNum2">2º Número</label>
+        <br>
+        <br>
+       <div id="result"></div>
+        <br>
+        <br>
+        <input type="button" value="Somar" onclick="somar()">
+
+    </div>
+
+    <script>
+        function somar(){
+            var txtNum1 = window.document.querySelector('input#txtNum1')
+            var txtNum2 = window.document.querySelector('input#txtNum2')
+            var result = window.document.querySelector('div#result')
+
+            var num1 = Number(txtNum1.value)
+            var num2 = Number(txtNum2.value)
+            var s = num1 + num2
+
+            result.innerHTML = `A soma de ${num1} e ${num2} : ${s}`
+        }
+    </script>
+    
+</body>
+</html>
