@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+<body>
+
+    <script>
+
+        let valores = [8, 1, 7, 4, 9, 2, 3]
+
+        valores.push(6) // insere valores
+        valores.push(5) 
+        
+        console.log(valores)
+
+        valores.sort()  //ordena os valores
+        
+        console.log(valores)
+
+        
+        // Procura um valor dentro do array
+        
+        let posicao = valores.indexOf(5)
+
+        if(posicao == -1){  // -1 retornado quando o valor não é encontrado.
+            console.log('O valor não foi encontrado!')
+        }else{
+            console.log(`O valor está na posição ${posicao}`)
+        }
+        
+        
+        /*
+        for(i = 0; i < valores.length; i++){
+            console.log(valores[i])
+        }
+        */
+
+        for(let i in valores){
+            console.log(valores[i])
+        }
+
+    </script>
+    
+</body>
+</html>
